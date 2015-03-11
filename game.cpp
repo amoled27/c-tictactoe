@@ -95,12 +95,12 @@ cin>>j;
 }
 
 int win_check(int a,int b,int c,int d,int e,int f,int g,int h,int i){
-    int flag=0;
-if((a&&b&&c)==120|| (a&&d&&g)==120||(a&&e&&i)==120||(d&&e&&f)==120||(g&&h&&i)==120||(c&&e&&g)==120||(b&&e&&h)==120||(c&&f&&i)==120){
+    int flag=0,x=120,o=111;
+if((a==x&&b==x&&c==x)|| (a==x&&d==x&&g==x)||(a==x&&e==x&&i==x)||(d==x&&e==x&&f==x)||(g==x&&h==x&&i==x)||(c==x&&e==x&&g==x)||(b==x&&e==x&&h==x)||(c==x&&f==x&&i==x)){
     cout<<"player 1 wins"<<endl;
     flag=1;
 }
-    else if((a&&b&&c)==111|| (a&&d&&g)==111||(a&&e&&i)==111||(d&&e&&f)==111||(g&&h&&i)==111||(c&&e&&g)==111||(b&&e&&h)==111||(c&&f&&i)==111){
+    else if((a==o&&b==o&&c==o)|| (a==o&&d==o&&g==o)||(a==o&&e==o&&i==o)||(d==o&&e==o&&f==o)||(g==o&&h==o&&i==o)||(c==o&&e==o&&g==o)||(b==o&&e==o&&h==o)||(c==o&&f==o&&i==o)){
     cout<<"player 2 wins"<<endl;
     flag=1;
     }
